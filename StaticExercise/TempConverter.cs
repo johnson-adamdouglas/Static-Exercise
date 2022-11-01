@@ -11,13 +11,13 @@ namespace StaticExercise
 
         public static double FahrenheitToCelsius(double temp)
         { 
-            var convertedTemp = (temp - 30) / 2;
+            var convertedTemp = (temp - 32) * (5.0 / 9.0);
             return convertedTemp;
         }
 
-        public static double CelciusToFahrenheit(double temp)
+        public static double CelsiusToFahrenheit(double temp)
         {
-            var convertedTemp = (temp * 1.8) + 32;
+            var convertedTemp = (temp * 1.8d) + 32;
             return convertedTemp;
         }
 
